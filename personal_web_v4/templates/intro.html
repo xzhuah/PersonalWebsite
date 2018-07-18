@@ -1,0 +1,25 @@
+{% load static %}
+<section class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-lg-2"></div>
+				<div class="col-md-10 col-lg-8">
+					<div class="intro">
+                        <div class="profile-img"><a onclick="showdiv()" href="#"><img class="img-thumbnail" src="{% static "images/me2.png" %}" alt="" ></a></div>
+                        <h2 onclick="$('#header').fadeToggle(1000)"><b><a href="#">Xinyu ZHU</a></b></h2>
+						<h4 class="font-yellow">Master of Science</h4>
+                        <h4 class="font-yellow">Computer and Information System Security</h4>
+						<ul class="information margin-tb-30">
+							<li><b>BORN : </b>September 11, 1996</li>
+							<li><b>HOMETOWN : </b>Guangdong Jiangmen, China</li>
+<li>
+{% include "icontabs.html" %}
+</li>
+
+						</ul>
+
+					</div><!-- intro -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- intro-section -->

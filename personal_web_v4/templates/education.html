@@ -1,0 +1,13 @@
+{% load filters %}
+{% load static %}
+
+<div class="education {{ education.uid|get_pos }}">
+
+
+    <h4><b>{{ education.Role}}</b></h4>
+
+    <h5 class="font-yellow"><b>{{ education.School }}</b></h5>
+    <h6 class="font-lite-black margin-t-10">{{ education.Time }}</h6>
+    <h6 class="font-lite-black margin-t-10">{{ education.Major}}</h6>
+    <h6 class="font-lite-black margin-t-10">{{ education.Location}}</h6>
+</div><!-- education -->

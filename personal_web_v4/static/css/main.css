@@ -1,0 +1,112 @@
+#bg{ display: block;   position: fixed; align-items: center; top: 0%;  left: 0%;  width: 100%;  height:100%;  background-color: #1E2454;  z-index:1001;  -moz-opacity: 0.7;  opacity:.30;  filter: alpha(opacity=30);
+        }
+        #show{
+            box-shadow: 0px 0px 75px #222222;
+            border-radius: 5px;
+            display: block;  position: fixed;
+            padding: 0px;  border: 8px solid #E8E9F7;  background-color: white;  z-index:1002;  overflow-x:hidden; overflow-y: auto;
+            width:auto;
+
+        }
+
+@media (min-width: 991.99px) {
+    #show{  left:20%; right:20%;top:10%;bottom: 10%}
+
+}
+
+@media (max-width:991.98px) {
+    #show{  left:10%; right:10%;top:10%;bottom: 10%}
+
+
+}
+
+@media (max-width:767.98px) {
+     .elapse-small{
+        display: none;
+        height: 0px;
+    }
+
+
+}
+
+.elapse-small{
+    color: #8C8C8C;
+    font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", cursive;
+    font-size: larger;
+
+}
+.elapse-small h2{
+    font-family: 'Poppins', serif;
+     font-weight: bold;
+    background: #FFFFFF;
+
+}
+
+.card_icon{
+ padding-bottom: 10px;
+}
+.info_card{
+ padding-top: 20px;
+
+}
+.info_card h2{
+
+  font-family: Arial;
+}
+.info_card div{
+ font-family: Arial;
+}
+.info_content{
+ padding-bottom: 10px;
+}
+.icontab img{
+    !important;
+     -webkit-transition: all .25s ease-in-out;
+       -moz-transition: all .25s ease-in-out;
+         -o-transition: all .25s ease-in-out;
+            transition: all .25s ease-in-out;
+}
+/*.icontab img:hover{*/
+    /*!important;*/
+    /*width: 108%;*/
+
+/*}*/
+/*.icontab a{*/
+    /*width: 45%;*/
+/*}*/
+.icontab{
+    padding-top: 30%;
+   width: 100%;
+
+}
+.social_icon{
+    width: 39%;
+
+
+}
+.slide-control{
+    height: 39%;
+}
+.social_icon_link{
+    /*background-image: url("../images/linkedin.png");*/
+    /*background-size: 100% 100%;*/
+    /*-moz-background-size: 100% 100%;*/
+    /*-webkit-background-size: 100% 100%;*/
+    width: auto;
+    height:auto;
+
+
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+.loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        /*background: url('../img/load.gif') 50% 50% no-repeat rgb(249,249,249);*/
+}
+
+

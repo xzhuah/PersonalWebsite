@@ -1,0 +1,12 @@
+<section class="quoto-section center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<i class="icon ion-quote"></i>
+					{% for test in all_data.test_scores %}
+                        {% include "test.html" %}
+                    {% endfor %}
+				</div><!-- col-sm-12 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- quoto-section -->

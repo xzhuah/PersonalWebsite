@@ -1,0 +1,31 @@
+<section class="portfolio-section section center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading">
+						<h3><b>Portfolio: Starting from here</b></h3>
+						<h6 class="font-lite-black"><b>Thanks to the beautiful world</b></h6>
+					</div>
+				</div><!-- col-sm-12 -->
+
+				<div class="col-sm-12">
+					<div class="portfolioFilter clearfix margin-b-80">
+
+						<a href="#" data-filter="*" class="current"><b>ALL</b></a>
+                        {% for items in cata_filter %}
+
+                            <a href="#" data-filter=".{{ items }}"><b>{{ items }}</b></a>
+                        {% endfor %}
+
+					</div><!-- portfolioFilter -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+
+			<div class="portfolioContainer margin-b-50">
+                {% for item in resource_query %}
+                        {% include "portfolio_container.html" %}
+                {% endfor %}
+
+			</div><!-- portfolioContainer -->
+		</div><!-- container -->
+	</section><!-- portfolio-section -->

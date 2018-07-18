@@ -1,0 +1,24 @@
+<section class="education-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 center-text">
+					<div class="heading">
+						<h3><b>Learnt a little here</b></h3>
+						<h6 class="font-lite-black"><b>One step and another</b></h6>
+					</div>
+				</div><!-- col-sm-3 -->
+
+				<div class="col-sm-12">
+
+					<div class="education-wrapper margin-b-50">
+						{% for education in all_data.education %}
+                            {% include "./education.html" %}
+                        {% endfor %}
+
+
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-9 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+	</section><!-- education-section -->

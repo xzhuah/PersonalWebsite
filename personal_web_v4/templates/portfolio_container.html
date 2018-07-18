@@ -1,0 +1,11 @@
+{% load static %}
+{%  load filters %}
+
+
+<div class="p-item {{ item.category }}">
+
+<a href="{%   static item.Img|get_img  %}" data-fluidbox>
+    <img src="{% static  item.Img|get_img  %}" alt="" width="100%"></a>
+</div><!-- p-item -->
+
+

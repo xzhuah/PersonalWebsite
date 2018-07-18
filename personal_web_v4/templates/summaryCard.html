@@ -1,0 +1,38 @@
+{% load static %}
+<div id="bg" onclick="hidediv()">
+    As usual, I hided a secret in my website, this webpage is not as simple as you might think.
+It is not a static webpage, instead it is linked with an mongodb database. Behind this webpage, it is Django framework and component
+    oriented development. When I need to update my webpage by adding information, I only need to update my local excel file and
+    run a python script to synchronize my local excel file and the Mongodb database without updating my html code.
+
+    You may wonder, why a Mongodb Altas database based webpage can be loaded so fast. If you can figure out how I
+    achieve this, you can send an email to me and if you are right, I will make the entire framework open source.
+    The hint is: high-speed memory and conditional update
+</div>
+
+<div class="card" id="show" style="background: #E8E9F7">
+{% include "./imageslider.html" %}
+    <div class="card-body " style="padding: 0 0 0 0;height: 61%;  left: 0;">
+
+        <div class="row" style="background: #FFFFFF">
+        <div class="col-xs-3 col-md-3 elapse-small" style="padding-top: 5%; height:100%; "  >
+        <img src="{% static "images/me.jpg" %}" class="img-thumbnail" width="40%" style="left:30%;top:-30%;position: absolute">
+        <div style="margin:15% 10% 0% 30%">
+            <h2>{{ visitor }}</h2>
+            Visitors
+        </div>
+             <div style="padding:15% 10% 0% 30%">
+            <h2>{{ pic_num }}</h2>
+            Portfolio
+        </div>
+        </div>
+
+        <div class="col-xs-9 col-md-9" style="background: #f1f1f1;bottom: 0;right: 0;color:#7B86D6;">
+        {% include "./infoCard.html" %}
+        </div>
+        </div>
+
+
+    </div>
+
+</div>

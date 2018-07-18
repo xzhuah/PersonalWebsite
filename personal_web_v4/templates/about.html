@@ -1,0 +1,43 @@
+<section class="about-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 center-text">
+					<div class="heading ">
+						<h3><b>About me</b></h3>
+						<h6 class="font-lite-black"><b>A Naive Happy Guy</b></h6>
+					</div>
+				</div><!-- col-sm-3 -->
+				<div class="col-sm-12 col-md-6">
+					<p class="margin-b-30">My parents named me "Xinyu"(昕宇) which means the rising sun in the universe in Chinese.
+                    My parents never received education as good as me, but I have to agree that they left me a good name.
+                    No matter where I am and no matter what situation I am faced, I always believe that I can be the rising sun, spreading
+                     hope to the world continuously and gathering power unstoppably. I also love the quality of the universe.
+                    Its selfless toleration has the ability to accommodate the world. Stay naive and stay young, listen to everyone
+                    and learn from people around, that is why the universe can be the universe.</p>
+				</div><!-- col-sm-6 -->
+				<div class="col-sm-12 col-md-6">
+					<p class="margin-b-50">Life can be more dramatic than drama because we always have enough time to make a change. I can
+                    always remember a guy who fight me a lot when I was a first year primary school student became my "errand" boy 5 years later.
+                    Things that past and people you have met, all of these are the witnesses of your growth. I am happy that I am
+                        always naive because that gives me endless chances to grow up and make sincere friends. As my favorite anime character
+                        Naruto said, I want to become stronger to protect more people. There are
+                        too many beautiful places and things in the world and that makes all the costs deserved.
+                    </p>
+				</div><!-- col-sm-6 -->
+
+				<div class="col-sm-12" id="counter">
+
+
+                    <div class="row">
+                        {% for skill in all_data.skills %}
+                            {% include "./skill_circle.html" %}
+                        {% endfor %}
+					</div><!-- row -->
+
+
+
+				</div><!-- col-sm-12 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
